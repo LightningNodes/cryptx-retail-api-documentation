@@ -165,7 +165,7 @@
 <span class="kn">import</span> <span class="nn">asyncio</span>
 
 <span class="c1"># WebSocket server URL (without namespace)
-</span><span class="n">server_url</span> <span class="o">=</span> <span class="s">'Shark-Authenticated-websocket-url'</span>
+</span><span class="n">server_url</span> <span class="o">=</span> <span class="s">'Cryptx-Authenticated-websocket-url'</span>
 
 <span class="c1"># Namespace path for authorized streaming
 </span><span class="n">namespace_path</span> <span class="o">=</span> <span class="s">'/auth-stream/your-listen-key'</span>

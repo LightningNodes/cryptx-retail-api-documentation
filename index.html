@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta
             name="description"
-            content="Documentation for the Shark APIs"
+            content="Documentation for the Cryptx APIs"
         >
-    <title>Shark API Reference Documentation</title>
+    <title>Cryptx API Reference Documentation</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -360,7 +360,7 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#getting-started-with-shark-apis" class="toc-h2 toc-link" data-title="Getting Started with Shark APIs">Getting Started with Shark APIs</a>
+                    <a href="#getting-started-with-shark-apis" class="toc-h2 toc-link" data-title="Getting Started with Cryptx APIs">Getting Started with Cryptx APIs</a>
                   </li>
                   <li>
                     <a href="#get-request" class="toc-h2 toc-link" data-title="getRequest Function">getRequest Function</a>
@@ -771,14 +771,14 @@ c. New Events:</li>
 
 <h1 id='introduction'>Introduction</h1>
 
-<p>Shark offers a suite of public-facing APIs designed to facilitate integration with various applications and systems, particularly within the domains it specializes in. Here is a high-level introduction to the key features and functionalities of Shark&#39;s public-facing APIs:</p>
+<p>Cryptx offers a suite of public-facing APIs designed to facilitate integration with various applications and systems, particularly within the domains it specializes in. Here is a high-level introduction to the key features and functionalities of Cryptx&#39;s public-facing APIs:</p>
 
 <ol>
 <li><p><strong>Authentication and Authorization</strong>:</p>
 
 <ul>
-<li><strong>OAuth 2.0 Support</strong>: Shark APIs utilize OAuth 2.0 for secure authentication and authorization, ensuring that only authorized users and applications can access the data.</li>
-<li><strong>API Keys</strong>: For simpler integrations, Shark also supports API keys, allowing developers to authenticate their requests with a unique key.</li>
+<li><strong>OAuth 2.0 Support</strong>: Cryptx APIs utilize OAuth 2.0 for secure authentication and authorization, ensuring that only authorized users and applications can access the data.</li>
+<li><strong>API Keys</strong>: For simpler integrations, Cryptx also supports API keys, allowing developers to authenticate their requests with a unique key.</li>
 </ul></li>
 <br/>
 
@@ -786,7 +786,7 @@ c. New Events:</li>
 
 <ul>
 <li><strong>Data Retrieval</strong>: APIs provide endpoints for retrieving various types of data, such as user information, transaction history, and analytics reports.</li>
-<li><strong>Data Insertion and Updates</strong>: Developers can use the APIs to insert new data or update existing records in the Shark system.</li>
+<li><strong>Data Insertion and Updates</strong>: Developers can use the APIs to insert new data or update existing records in the Cryptx system.</li>
 <li><strong>Search and Filtering</strong>: Advanced search and filtering capabilities allow developers to query the data efficiently, using parameters like date ranges, status filters, and more.</li>
 </ul></li>
 
@@ -810,13 +810,13 @@ c. New Events:</li>
 
 <ul>
 <li><strong>Data Encryption</strong>: All data transmitted via the APIs is encrypted to ensure security and privacy.</li>
-<li><strong>Compliance</strong>: Shark APIs adhere to industry standards and regulations, such as GDPR making them suitable for use in regulated industries like finance.</li>
+<li><strong>Compliance</strong>: Cryptx APIs adhere to industry standards and regulations, such as GDPR making them suitable for use in regulated industries like finance.</li>
 </ul></li>
 </ol>
 
-<h2 id='getting-started-with-shark-apis'>Getting Started with Shark APIs</h2>
+<h2 id='getting-started-with-shark-apis'>Getting Started with Cryptx APIs</h2>
 
-<p>APIs provided by Shark classifications ensure that only authorized users can access sensitive functionalities, while still allowing open access to non-sensitive information or system statuses.</p>
+<p>APIs provided by Cryptx classifications ensure that only authorized users can access sensitive functionalities, while still allowing open access to non-sensitive information or system statuses.</p>
 
 <h3 id='authenticated-apis'>Authenticated APIs</h3>
 
@@ -855,7 +855,7 @@ Base URLs for: <br/>
 - Public endpoints: <code> https://api.cryptx.in/ </code>
 </aside>
 
-<p>To begin using Shark Authenticated APIs, follow these steps:</p>
+<p>To begin using Cryptx Authenticated APIs, follow these steps:</p>
 
 <ol>
 <li><p>API Key Creation <br/>
@@ -1179,7 +1179,7 @@ Returns the response data for further use.<br/></p>
 </code></pre></div>
 <p><code>POST /v1/order/place-order</code></p>
 
-<p>Place an order (either a market order or a limit order) on Shark&#39;s trading platform. It allows users to submit an order to buy or sell a specific asset.
+<p>Place an order (either a market order or a limit order) on Cryptx&#39;s trading platform. It allows users to submit an order to buy or sell a specific asset.
 <aside class="notice"> Note:
 <ul>
 <li>Price is compulsory to place a limit order.</li>
@@ -4546,9 +4546,9 @@ Requires <code>clientOrderId</code> that can be retrieved from <a href="#get-ope
 
 <h1 id='public-endpoints'>Public Endpoints</h1>
 
-<p>Public endpoints in Shark are designed to facilitate easy access to various functionalities of the Shark platform, particularly for integration with external systems and applications. 
+<p>Public endpoints in Cryptx are designed to facilitate easy access to various functionalities of the Cryptx platform, particularly for integration with external systems and applications. 
 
-Below is an overview of the public endpoints available in Shark, their typical uses, and example API calls.</p>
+Below is an overview of the public endpoints available in Cryptx, their typical uses, and example API calls.</p>
 
 <h2 id='ticker-update-24hr'>Ticker Update (24Hr)</h2>
 
@@ -5576,7 +5576,7 @@ Below is an overview of the public endpoints available in Shark, their typical u
 <span class="kn">import</span> <span class="nn">asyncio</span>
 
 <span class="c1"># WebSocket server URL (without namespace)
-</span><span class="n">server_url</span> <span class="o">=</span> <span class="s">'Shark-Authenticated-websocket-url'</span>
+</span><span class="n">server_url</span> <span class="o">=</span> <span class="s">'Cryptx-Authenticated-websocket-url'</span>
 
 <span class="c1"># Namespace path for authorized streaming
 </span><span class="n">namespace_path</span> <span class="o">=</span> <span class="s">'/auth-stream/your-listen-key'</span>
@@ -6213,7 +6213,7 @@ Below is an overview of the public endpoints available in Shark, their typical u
 
 <h1 id="error-codes"> Error Codes </h1>
 
-<p>Shark APIs utilize a set of custom error codes, each associated with an HTTP status code and a specific error message. These codes help users pinpoint the exact issue that caused the request to fail.</p>
+<p>Cryptx APIs utilize a set of custom error codes, each associated with an HTTP status code and a specific error message. These codes help users pinpoint the exact issue that caused the request to fail.</p>
 
 <table>
   <thead>
