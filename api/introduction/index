@@ -76,8 +76,8 @@
 
 <aside class="notice">
 Base URLs for: <br/>
-- Authenticated endpoints: <code>https://fapi.sharkexchange.in/ </code> <br/>
-- Public endpoints: <code> https://api.sharkexchange.in/ </code>
+- Authenticated endpoints: <code>https://fapi.cryptx.in/ </code> <br/>
+- Public endpoints: <code> https://api.cryptx.in/ </code>
 </aside>
 
 <p>To begin using Shark Authenticated APIs, follow these steps:</p>

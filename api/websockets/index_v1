@@ -1,11 +1,11 @@
 <h1 id='fawss-market-data-streams-web-socket-public'>FAWSS Market Data Streams Web Socket: Public</h1>
 
-<p>Base URL : https://pilot-fawss.sharkexchange.in/
+<p>Base URL : https://pilot-fawss.cryptx.in/
 Connection creation: Use <strong>socket.io-client</strong> library for the connection.</p></p>
 
 <p><code>import io from &#39;socket.io-client&#39;;</code></p>
 
-<p><code>const socketClient = io(&#39;https://testnet-fawss.sharkexchange.in&#39;);</code></p>
+<p><code>const socketClient = io(&#39;https://testnet-fawss.cryptx.in&#39;);</code></p>
 
 <h2 id='live-subscribing-unsubscribing-to-streams'>Live Subscribing/Unsubscribing to streams</h2>
 

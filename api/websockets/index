@@ -12,7 +12,7 @@
 
 <aside class="notice"> Notes:
 <ul>
-  <li>Authenticated Web Socket stream base URL <code>https://fawss-uds.sharkexchange.in/auth-stream </code></li>
+  <li>Authenticated Web Socket stream base URL <code>https://fawss-uds.cryptx.in/auth-stream </code></li>
   <li>Requires listenkey that can be obtained from the <a href="#create-listen-key">Create Listen Key API</a></li>
 </ul>
 </aside>
@@ -87,7 +87,7 @@
             </tr>
         </tbody>
 </table>
-<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">serverUrl</span> <span class="o">=</span> <span class="s2">`https://fawss-uds.sharkexchange.in/auth-stream/</span><span class="p">${</span><span class="nx">listenKey</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">serverUrl</span> <span class="o">=</span> <span class="s2">`https://fawss-uds.cryptx.in/auth-stream/</span><span class="p">${</span><span class="nx">listenKey</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
 
 <span class="c1">// Create a new socket connection</span>
 <span class="kd">const</span> <span class="nx">socket</span> <span class="o">=</span> <span class="nx">io</span><span class="p">(</span><span class="nx">serverUrl</span><span class="p">);</span>
@@ -265,7 +265,7 @@
 
 <aside class="notice">
 
-  Public Web Socket URL <code>https://fawss.sharkexchange.in/</code>
+  Public Web Socket URL <code>https://fawss.cryptx.in/</code>
 
 </aside>
 
@@ -347,7 +347,7 @@
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">io</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">socket.io-client</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="c1">// WebSocket server URL</span>
-<span class="kd">const</span> <span class="nx">serverUrl</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://fawss.sharkexchange.in/</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">serverUrl</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://fawss.cryptx.in/</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="c1">// Create a new socket connection</span>
 <span class="kd">const</span> <span class="nx">socket</span> <span class="o">=</span> <span class="nx">io</span><span class="p">(</span><span class="nx">serverUrl</span><span class="p">);</span>
@@ -420,7 +420,7 @@
 <span class="kn">import</span> <span class="nn">socketio</span>
 
 <span class="c1"># WebSocket server URL
-</span><span class="n">server_url</span> <span class="o">=</span> <span class="s">'https://fawss.sharkexchange.in/'</span>
+</span><span class="n">server_url</span> <span class="o">=</span> <span class="s">'https://fawss.cryptx.in/'</span>
 
 <span class="c1"># Create a new Socket.IO client
 </span><span class="n">sio</span> <span class="o">=</span> <span class="n">socketio</span><span class="p">.</span><span class="n">Client</span><span class="p">()</span>
@@ -505,7 +505,7 @@
 <p>Creates a new listen key for WebSocket connections.</p>
 
 <p>A listen key is used to maintain a persistent connection to the WebSocket server, allowing you to receive real-time updates on user account data.</p>
-<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">baseUrl</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PI42_BASE_URL</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/v1/retail/listen-key</span><span class="dl">'</span><span class="p">;</span>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">baseUrl</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">CRYPTX_BASE_URL</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/v1/retail/listen-key</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="c1">// Function to generate a signature for the request</span>
 <span class="kd">const</span> <span class="nx">generateSignature</span> <span class="o">=</span> <span class="p">(</span><span class="nx">params</span><span class="p">:</span> <span class="nx">object</span><span class="p">,</span> <span class="nx">apiSecret</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
