@@ -1,11 +1,11 @@
 <h1 id='authentication'>Authentication123</h1>
-<p>As a partner looking to integrate with Shark APIs and access the functionalities programmatically, ensure the following:</p>
+<p>As a partner looking to integrate with Cryptx APIs and access the functionalities programmatically, ensure the following:</p>
 
 <ol>
-<li><p>Create an account on the platform and share the email with Shark. 
+<li><p>Create an account on the platform and share the email with Cryptx. 
 <br/>This will be set as the master account for the partner. 
 All API requests from partners will be authenticated using the tokens of this master account only.</p></li>
-<li><p>Share the RSA-generated public key with Shark. 
+<li><p>Share the RSA-generated public key with Cryptx. 
 <br/>The corresponding private key should be used for generating header signature.</p>
 
 <p>These commands can be used for generating such private-public key pair.</p>
@@ -14,7 +14,7 @@ All API requests from partners will be authenticated using the tokens of this ma
  openssl genrsa 2048 -out private.pem <br/>
  openssl rsa -in private.pem -pubout -outform PEM -out public.pem
 </code></p></li>
-<li><p>All requests should contain cookie which will be shared by Shark.</p></li>
+<li><p>All requests should contain cookie which will be shared by Cryptx.</p></li>
 <li><p>All requests should contain these common headers.</p></li>
 </ol>
 
