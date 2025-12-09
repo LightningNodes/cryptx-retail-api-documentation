@@ -24,7 +24,7 @@
 <ol>
 <li>New FAWSS_UDS to emit user specific events:</li>
 <ul>
-  <li>FAWSS_UDS Link:<code>(https://fawss-uds.cryptx.in/auth-stream)</code></li>
+  <li>FAWSS_UDS Link:<code>(https://fawss-uds.cryptxindia.com/auth-stream)</code></li>
   <li>FAWSS will only send market data events.</li>
 </ul>
 

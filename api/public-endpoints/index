@@ -32,7 +32,7 @@ Below is an overview of the public endpoints available in Cryptx, their typical 
         <span class="k">return</span>
 
     <span class="c1"># Construct the full URL for the API request using the provided contract pair
-</span>    <span class="n">full_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"https://api.cryptx.in/v1/market/ticker24Hr/</span><span class="si">{</span><span class="n">contract_pair</span><span class="si">}</span><span class="s">"</span>
+</span>    <span class="n">full_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"https://api.cryptxindia.com/v1/market/ticker24Hr/</span><span class="si">{</span><span class="n">contract_pair</span><span class="si">}</span><span class="s">"</span>
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Send the GET request to the API
@@ -206,7 +206,7 @@ Below is an overview of the public endpoints available in Cryptx, their typical 
         <span class="k">return</span>
 
     <span class="c1"># Construct the URL for the API request using the provided contract pair
-</span>    <span class="n">full_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"https://api.cryptx.in/v1/market/aggTrade/</span><span class="si">{</span><span class="n">contract_pair</span><span class="si">}</span><span class="s">"</span>
+</span>    <span class="n">full_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"https://api.cryptxindia.com/v1/market/aggTrade/</span><span class="si">{</span><span class="n">contract_pair</span><span class="si">}</span><span class="s">"</span>
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Send the GET request to fetch trade updates
@@ -340,7 +340,7 @@ Below is an overview of the public endpoints available in Cryptx, their typical 
         <span class="k">return</span>
 
     <span class="c1"># Construct the URL for the API request using the provided contract pair
-</span>    <span class="n">full_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"https://api.cryptx.in/v1/market/depth/</span><span class="si">{</span><span class="n">contract_pair</span><span class="si">}</span><span class="s">"</span>
+</span>    <span class="n">full_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"https://api.cryptxindia.com/v1/market/depth/</span><span class="si">{</span><span class="n">contract_pair</span><span class="si">}</span><span class="s">"</span>
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Send the GET request to fetch depth updates
@@ -497,7 +497,7 @@ Below is an overview of the public endpoints available in Cryptx, their typical 
       <span class="p">}</span>
 
       <span class="c1"># Construct the full URL for the Kline endpoint
-</span>      <span class="n">kline_url</span> <span class="o">=</span> <span class="s">"https://api.cryptx.in/v1/market/klines"</span>
+</span>      <span class="n">kline_url</span> <span class="o">=</span> <span class="s">"https://api.cryptxindia.com/v1/market/klines"</span>
 
       <span class="c1"># Send the POST request to get Kline data
 </span>      <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">kline_url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
